@@ -115,9 +115,6 @@ MIT License © [Lucas John Brooks](https://github.com/LucasJohnBrooks)
 * 🔗 **GitHub:** [manifest-plugin](https://github.com/LucasJohnBrooks/manifest-plugin)
 * 📦 **NPM:** [manifest-plugin](https://www.npmjs.com/package/manifest-plugin)
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/LucasJohnBrooks/manifest-plugin/main/logo.png" alt="Manifest Plugin Logo" width="100"/>
-</p>
 
 ---
 
