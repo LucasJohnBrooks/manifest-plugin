@@ -2,7 +2,7 @@
 
 A powerful **Webpack plugin** designed to generate a customizable and lightweight manifest of your compiled assets. Simplify asset management, improve cache control, and integrate seamlessly into modern web development workflows.
 
-![Manifest Plugin Banner](https://i.imgur.com/zIU7S5I.png)
+![Manifest Plugin Banner](https://raw.githubusercontent.com/LucasJohnBrooks/manifest-plugin/main/banner.png)
 
 ---
 
@@ -136,3 +136,7 @@ MIT License © [Lucas John Brooks](https://github.com/LucasJohnBrooks)
 
 * 🔗 **GitHub:** [manifest-plugin](https://github.com/LucasJohnBrooks/manifest-plugin)
 * 📦 **NPM:** [manifest-plugin](https://www.npmjs.com/package/manifest-plugin)
+
+---
+
+![Logo](https://raw.githubusercontent.com/LucasJohnBrooks/manifest-plugin/main/logo.png)
