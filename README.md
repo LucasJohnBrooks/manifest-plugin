@@ -1,8 +1,10 @@
 # 🚀 manifest-plugin
 
-A powerful **Webpack plugin** designed to generate a customizable and lightweight manifest of your compiled assets. Simplify asset management, improve cache control, and integrate seamlessly into modern web development workflows.
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LucasJohnBrooks/manifest-plugin/main/banner.png" alt="Manifest Plugin Banner" width="800"/>
+</p>
 
-![Manifest Plugin Banner](https://raw.githubusercontent.com/LucasJohnBrooks/manifest-plugin/main/banner.png)
+A sleek, powerful **Webpack plugin** designed to generate a customizable and lightweight manifest of your compiled assets. Simplify asset management, improve cache control, and integrate seamlessly into modern web development workflows.
 
 ---
 
@@ -36,24 +38,21 @@ yarn add --dev manifest-plugin
 
 ---
 
-## 🚀 Usage
-
-### Basic Setup
+## 🚀 Quick Start
 
 ```js
 const ManifestPlugin = require('manifest-plugin');
 
 module.exports = {
-  // your webpack config
   plugins: [
     new ManifestPlugin({
-      fileName: 'manifest.json',  // default
+      fileName: 'manifest.json',
     }),
   ],
 };
 ```
 
-### Sample Output (`manifest.json`)
+📄 **Sample Output:**
 
 ```json
 {
@@ -64,56 +63,39 @@ module.exports = {
 
 ---
 
-## ⚙️ Options
+## ⚙️ Plugin Options
 
 | Option     | Type     | Default           | Description                              |
 | ---------- | -------- | ----------------- | ---------------------------------------- |
 | `fileName` | `string` | `'manifest.json'` | Output filename for the manifest file.   |
 | `map`      | `func`   | `undefined`       | Custom function to modify manifest keys. |
 
-Example with custom `map`:
+Example:
 
 ```js
 new ManifestPlugin({
   fileName: 'my-manifest.json',
-  map: (key, value) => key.toUpperCase(),
+  map: (key) => key.toUpperCase(),
 });
 ```
 
 ---
 
-## 💡 Why Use manifest-plugin?
+## 💡 Why manifest-plugin?
 
-✅ Better control over assets in caching/CDN
-✅ Useful for server-side rendering or asset injection
-✅ Easy integration with frameworks like React, Vue, Next.js
+✅ Hassle-free asset management
+✅ Optimized for caching & CDN
+✅ Works perfectly with SSR & modern frameworks
 
 ---
 
 ## 🛠 Development
 
-1. Clone the repository:
-
 ```bash
 git clone https://github.com/LucasJohnBrooks/manifest-plugin.git
 cd manifest-plugin
-```
-
-2. Install dependencies:
-
-```bash
 npm install
-```
-
-3. Build:
-
-```bash
 npm run build
-```
-
-4. Run Tests:
-
-```bash
 npm test
 ```
 
@@ -121,8 +103,8 @@ npm test
 
 ## 🙌 Contributing
 
-Contributions, suggestions, and issue reports are warmly welcome!
-Please open an issue or submit a pull request.
+We love contributions ❤️
+Fork, improve, and submit a pull request.
 
 ---
 
@@ -137,6 +119,10 @@ MIT License © [Lucas John Brooks](https://github.com/LucasJohnBrooks)
 * 🔗 **GitHub:** [manifest-plugin](https://github.com/LucasJohnBrooks/manifest-plugin)
 * 📦 **NPM:** [manifest-plugin](https://www.npmjs.com/package/manifest-plugin)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LucasJohnBrooks/manifest-plugin/main/logo.png" alt="Manifest Plugin Logo" width="100"/>
+</p>
+
 ---
 
-![Logo](https://raw.githubusercontent.com/LucasJohnBrooks/manifest-plugin/main/logo.png)
+> ⭐ Don’t forget to star this repo if you find it useful!
