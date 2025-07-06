@@ -1,5 +1,9 @@
 # 🚀 manifest-plugin
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LucasJohnBrooks/manifest-plugin/main/banner.png" alt="Manifest Plugin Banner" width="800"/>
+</p>
+
 A sleek, powerful **Webpack plugin** designed to generate a customizable and lightweight manifest of your compiled assets. Simplify asset management, improve cache control, and integrate seamlessly into modern web development workflows.
 
 ---
@@ -17,6 +21,9 @@ A sleek, powerful **Webpack plugin** designed to generate a customizable and lig
 
 * 🛡️ **Lightweight & Fast**
   Minimal performance impact with maximum utility.
+
+* 🐒 **Tampermonkey Compatibility**
+  Can be used inside **Tampermonkey** userscripts via `@require` or direct embedding for advanced asset management or resource tracking.
 
 ---
 
@@ -36,6 +43,8 @@ yarn add --dev manifest-plugin
 
 ## 🚀 Quick Start
 
+### Webpack Example
+
 ```js
 const ManifestPlugin = require('manifest-plugin');
 
@@ -46,6 +55,29 @@ module.exports = {
     }),
   ],
 };
+```
+
+### Tampermonkey Example
+
+```javascript
+// ==UserScript==
+// @name         Manifest Plugin Example
+// @namespace    http://tampermonkey.net/
+// @version      1.0
+// @description  Example use of manifest-plugin in Tampermonkey
+// @author       You
+// @match        *://*/*
+// @require      https://unpkg.com/manifest-plugin/dist/manifest-plugin.min.js
+// ==/UserScript==
+
+(function() {
+  const manifest = {
+    "main.js": "main.9f123abc.js",
+    "style.css": "style.a8c76f.css"
+  };
+
+  console.log("Manifest loaded:", manifest);
+})();
 ```
 
 📄 **Sample Output:**
@@ -82,6 +114,7 @@ new ManifestPlugin({
 ✅ Hassle-free asset management
 ✅ Optimized for caching & CDN
 ✅ Works perfectly with SSR & modern frameworks
+✅ Can be integrated into **userscripts** for resource mapping or asset fingerprinting
 
 ---
 
@@ -115,6 +148,9 @@ MIT License © [Lucas John Brooks](https://github.com/LucasJohnBrooks)
 * 🔗 **GitHub:** [manifest-plugin](https://github.com/LucasJohnBrooks/manifest-plugin)
 * 📦 **NPM:** [manifest-plugin](https://www.npmjs.com/package/manifest-plugin)
 
+<p align="center">
+  <img src="https://raw.githubusercontent.com/LucasJohnBrooks/manifest-plugin/main/logo.png" alt="Manifest Plugin Logo" width="100"/>
+</p>
 
 ---
 
