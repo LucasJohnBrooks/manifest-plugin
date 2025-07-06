@@ -1,9 +1,5 @@
 # 🚀 manifest-plugin
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/LucasJohnBrooks/manifest-plugin/main/banner.png" alt="Manifest Plugin Banner" width="800"/>
-</p>
-
 A sleek, powerful **Webpack plugin** designed to generate a customizable and lightweight manifest of your compiled assets. Simplify asset management, improve cache control, and integrate seamlessly into modern web development workflows.
 
 ---
