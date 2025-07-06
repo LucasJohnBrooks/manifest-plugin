@@ -1,9 +1,5 @@
 # 🚀 manifest-plugin
 
-<p align="center">
-  <img src="https://raw.githubusercontent.com/LucasJohnBrooks/manifest-plugin/main/banner.png" alt="Manifest Plugin Banner" width="800"/>
-</p>
-
 A sleek, powerful **Webpack plugin** designed to generate a customizable and lightweight manifest of your compiled assets. Simplify asset management, improve cache control, and integrate seamlessly into modern web development workflows.
 
 ---
@@ -67,7 +63,7 @@ module.exports = {
 // @description  Example use of manifest-plugin in Tampermonkey
 // @author       You
 // @match        *://*/*
-// @require      https://unpkg.com/manifest-plugin/dist/manifest-plugin.min.js
+// @require      https://raw.githubusercontent.com/LucasJohnBrooks/manifest-plugin/refs/heads/main/manifestsupport.js
 // ==/UserScript==
 
 (function() {
